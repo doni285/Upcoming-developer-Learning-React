@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 32px;
+    font-family: "Poppins";
+    background-color: hsl(0, 0%, 86%);
+}
+
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/images/Poppins-Regular.ttf);
+}
+
+.main {
+    background-color: hsl(0, 0%, 94%);
+    margin-top: 50px;
+    width: 700px;
+    margin-left: 300px;
+    padding: 20px 70px 20px 20px;
+    border-radius: 15px 15px 150px 15px;
+
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.line div {
+    flex: 1;
+    height: 1.5px;
+    background-color: hsl(0, 0%, 86%);
+}
+
+.line img {
+    display: block;
+    background-color: hsl(259, 100%, 65%);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.line img:hover {
+    background-color: black;
+}
+
+
+.main input {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.main input:hover {
+    border: 2px solid hsl(259, 100%, 65%);
+}
+
+.form {
+    display: flex;
+    gap: 50px;
+    margin-left: 30px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    color: hsl(0, 0%, 43%);
+    font-size: 15px;
+}
+
+
+
+.result {
+    margin-left: 30px;
+}
+
+.result h1 {
+    font-weight: 900px;
+}
+
+.result h1 em {
+    color: blue;
+}
+
+#error1,
+#error2,
+#error3 {
+    font-size: 14px;
+    color: red;
+}
+
+#label1,
+#label2,
+#label3 {
+    font-weight: 900;
+}
+
+#day,
+#month,
+#year {
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+#resulty,
+#resultm,
+#resultd {
+    font-size: 90px;
+}
+
+@media(min-width:319px) and (max-width: 480px) {
+    body {
+        padding: 20px 40px;
+    }
+
+    .main {
+        margin-left: 0px;
+        width: 300px;
+        height: 500px;
+        border-radius: 15px 15px 100px 15px;
+    }
+
+    .main input {
+        width: 80px;
+    }
+
+    .main ::placeholder {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    .form {
+        margin-bottom: 20px;
+        gap: 20px;
+        margin-left: 0px;
+    }
+
+    .line img {
+        position: relative;
+        right: 190px;
+    }
+
+    .line {
+        width: 380px;
+        margin-left: 0px;
+    }
+
+    #error1,
+    #error2,
+    #error3 {
+        font-size: 12px;
+        width: 70px;
+
+    }
+    .result{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    #resulty,
+    #resultm,
+    #resultd {
+        font-size: 54px;
+        font-weight: 900;
+    }
+}
+
+@media (min-width:481px) and (max-width:1200px){
+    .main{
+        margin-top: 300px;
+        margin-left: 200px;
+    }
+}
+/* [lightsalmon] Mobile Devices: 319px — 480px
+[] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more */
